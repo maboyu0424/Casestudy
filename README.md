@@ -1,11 +1,11 @@
 # Casestudy
 hello to our project!
 
-Our group name:XXX
+  Our group name:Ibnu
 
 AND
 
-Our group got member:
+Our group got members:
 
 MA BOYU 1711575
 
