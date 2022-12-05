@@ -1,7 +1,7 @@
 # Casestudy
 hello to our project!
 
-Our group name:
+Our group name:XXX
 AND
 Our group got member:
 MA BOYU 1711575
