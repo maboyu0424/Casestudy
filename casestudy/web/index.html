@@ -9,19 +9,19 @@
     <title>casestudy</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="main.dart.js"></script>
-
+	<img src = "hotel.png">
     <style>
       body {background-color: whitesmoke;}
-      h3   {color: rgb(85, 85, 85); text-align:center;}
-      h4   {color: rgb(85, 85, 85); text-align:center;}
-      </style>
-
+      h1   {font-size:20px; color: black; text-align:center; border-bottom: 3px solid #003B95; background-color: white;}
+      h2   {font-size:15px; color: black; text-align:center;}
+	  p.footer {background-color: #003B95; padding: 10px; text-align: left;}
+     </style>
 </head>
 </div>
 <body>
   <div id="container">
     <div id="form-venues">
-      <h3>Choose a Room to Book:</h3>
+      <h1>Choose a Room to Book:</h1>
       <center><select name="" id="venues">
         <option value="1">Room 1</option>
         <option value="2">Room 2</option>
@@ -56,10 +56,10 @@
   
       </select></center>
       </div>
-      <br>
+	  <br>
       <!-- <div id="form-time"> -->
-        <h3>Operation time from 8am until 11pm</h3>
-		<h4>Please pick a time to book:</h4>
+        <h1>Operation time from 8am until 11pm</h1>
+		<h2>Please pick a time to book:</h2>
 <!-- <select name="time1" id="time">
   <option class="optionT" value="1" id="8:00-10:00">8:00-10:00</option>
   <option class="optionT" value="2" id="10:00-12:00">10:00-12:00</option>
@@ -71,7 +71,6 @@
   <option class="optionT" value="8" id="22:00-23:00">22:00-23:00</option>
 </select>
       </div> -->
-      <br>
 <!-- <input type="time" name="time2" id="time2"> -->
 <center>
 <input type="date" name="datetime" id="datetime" value="2022-12-01"/>
@@ -139,6 +138,7 @@
 
   <div id="bookingRecord"></div>
 
-
+<p class = "footer"><b>Case Study INFO 4335</b></p>
 </body>
 </html>
+
