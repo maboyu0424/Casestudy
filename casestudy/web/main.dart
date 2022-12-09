@@ -36,6 +36,7 @@ void main() {
     var r = true;
     var x = false;
     // ---------------------------------------------------------
+    // Test algorithm 1
     for (var i = 0; i < bookingtable.length; i++) {
       //If the list have the number same with onlyNumber.then r = false;
       if (bookingtable[i] == onlyNumber) {
@@ -43,29 +44,44 @@ void main() {
         print("false");
       }
     }
+    // ----------------------------------------------------------
+    // Test algorithm 2
     var only1 = onlyNumber.toString().replaceFirst("3", "f");
     var g = only1.split("f");
     var k = int.parse(g[1]);
+    var roomNew = int.parse(g[0]);
+    // print("here is g:$g,here is room new:$roomNew");
+    // var newNumberEndTime = ((k ~/ 100) % 100);
+    var newNumberStartTime = (k ~/ 10000);
+    // print("here is new end $newNumberEndTime");
+    // print("here is new start $newNumberStartTime");
 
     for (var i = 0; i < bookingtable.length; i++) {
       var j = ((bookingtable[i].toString()).replaceFirst("3", "f")).split("f");
       var l = int.parse(j[1]);
-      print("here is $l");
+      var roomOld = int.parse(j[0]);
+      var listNumberEndTime = ((l ~/ 100) % 100);
+      // var listNumberStartTime = (l ~/ 10000);
+      // print("here is list end $listNumberEndTime");
+      // print("here is list start $listNumberStartTime");
+
+      if (roomNew == roomOld) {
+        if (newNumberStartTime < listNumberEndTime) {
+          r = false;
+          t = false;
+        }
+        // else if (listNumberStartTime == 0) {
+        //   print("Shi jian chong tu!");
+        // } else if (listNumberStartTime == 0) {
+        //   print("Shi jian chong tu!");
+        // } else if (listNumberStartTime == 0) {
+        //   print("Shi jian chong tu!");
+        // } else if (listNumberStartTime == 0) {
+        //   print("Shi jian chong tu!");
+        // }
+      }
     }
-
-    // var g = onlyNumber.toString().split("3");
-    // var k = int.parse(g[1]);
-
-    // for (var i = 0; i < bookingtable.length; i++) {
-    //   var j = bookingtable[i].toString().split("3");
-    //   var l = int.parse(j[1]);
-    //   var z = ((l / 10000).toString());
-
-    //   print("here is $l");
-    //   print("here is ${g}");
-    //   print(z);
-    // }
-
+//-----------------------------------------------------------------
     if (sth < edh) {
       if (sth >= 8 && edh <= 23) {
         if (bookingtable.isEmpty) {
