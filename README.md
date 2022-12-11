@@ -38,7 +38,7 @@ In HTML, the user can select the room,the starting time of using and the ending 
 
 In dart, once the user press the submit button, then it will get all the data; For example:room number,date of year,month,day.date of hour,minute.
 
-The core algorithm is to code everthing into a number,for example:I choose room 1 at 2022/12/05 from 8:00 to 10:00,then it will be recorded at List as '10f801005'.
+The core algorithm is to code everthing into a number,for example:I choose room 1 at 2022/12/05 from 8:00 to 10:00,then it will be recorded at List as '130801005'.
 
 If you want to add it into the list again ,and the code that is responsible for detecting will display an error and prevent the same number from being added.
 
