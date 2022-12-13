@@ -17,6 +17,8 @@ class Register {
   var venueNumber;
 
   Register(var bookingtable1) {
+    //To Initialize all variables
+    
     bookingtable = bookingtable1;
     SelectElement venue = querySelector("#venues") as SelectElement;
 
@@ -48,9 +50,10 @@ class Register {
     x = false;
   }
 
-  testAlgorithm() {
+  testAlgorithm1() {
+    //To check the list that has created in the Constructor. If the list has the number same with onlyNumber(newly created number), Then r = false;
+    //Can't let user to book the same room at the same time.  
     for (var i = 0; i < bookingtable.length; i++) {
-      //If the list have the number same with onlyNumber.then r = false;
       if (bookingtable[i] == onlyNumber) {
         r = false;
         print("false");
@@ -59,6 +62,8 @@ class Register {
   }
 
   testAlgorithm2() {
+    //To check the number in the list is same or not.
+    //Can't let user to book the same room at wrong time period.eg. booked room 1 at 8:00-10:00, then the user can't book room start from 8:00 until 9:59.
     var only1 = onlyNumber.toString().replaceFirst("4", "f");
     var g = only1.split("f");
     var k = int.parse(g[1]);
@@ -83,27 +88,19 @@ class Register {
           r = false;
           t = false;
         }
-        // else if (listNumberStartTime == 0) {
-        //   print("Shi jian chong tu!");
-        // } else if (listNumberStartTime == 0) {
-        //   print("Shi jian chong tu!");
-        // } else if (listNumberStartTime == 0) {
-        //   print("Shi jian chong tu!");
-        // } else if (listNumberStartTime == 0) {
-        //   print("Shi jian chong tu!");
-        // }
+        
       }
     }
   }
 
   mainfunction() {
-    // ---------------------------------------------------------
+    //To start the whole funciton, once the object that's created to call this function , then it would execute all function automatically.
     // Test algorithm 1
-    testAlgorithm();
+    testAlgorithm1();
     // ----------------------------------------------------------
     // Test algorithm 2
     testAlgorithm2();
-//-----------------------------------------------------------------
+    //-----------------------------------------------------------------
     if (sth < edh) {
       if (sth >= 8 && edh <= 23) {
         if (bookingtable.isEmpty) {
