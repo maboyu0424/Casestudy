@@ -17,7 +17,7 @@ Maboyu is more responsible for the dart codind, and Ifran is more focus on the h
 
 Just like this:
 
-Ifran make done the Html page ,and he also create a main.dart,and write like this:
+Irfan make done the Html page ,and he also create a main.dart,and write like this:
 
 1.NumberInputElement submit = querySelector('#submit') as NumberInputElement;
 
@@ -25,7 +25,7 @@ Ifran make done the Html page ,and he also create a main.dart,and write like thi
 
 , because he need to explain to Maboyu how are elements in HTML represented in dart.
 
-And maboyu know that, and can to do the last part :caculate that the number of time plus the number of room plus the number of date,and display the booking date.
+And Maboyu know that, and can to do the last part :caculate that the number of time plus the number of room plus the number of date,and display the booking date.
 
 The Core algorithm part(can we say that??) is the product of our discussion.
 
