@@ -29,7 +29,7 @@ void main() {
 
     var venueNumber = int.parse((venue.value).toString());
     var onlyNumber =
-        venueNumber * 100000000 + 30000000 + sth * 10000 + edh * 100 + day;
+        venueNumber * 100000000 + 40000000 + sth * 10000 + edh * 100 + day;
 
     print(onlyNumber);
     var t = true;
@@ -46,7 +46,7 @@ void main() {
     }
     // ----------------------------------------------------------
     // Test algorithm 2
-    var only1 = onlyNumber.toString().replaceFirst("3", "f");
+    var only1 = onlyNumber.toString().replaceFirst("4", "f");
     var g = only1.split("f");
     var k = int.parse(g[1]);
     var roomNew = int.parse(g[0]);
@@ -57,7 +57,7 @@ void main() {
     // print("here is new start $newNumberStartTime");
 
     for (var i = 0; i < bookingtable.length; i++) {
-      var j = ((bookingtable[i].toString()).replaceFirst("3", "f")).split("f");
+      var j = ((bookingtable[i].toString()).replaceFirst("4", "f")).split("f");
       var l = int.parse(j[1]);
       var roomOld = int.parse(j[0]);
       var listNumberEndTime = ((l ~/ 100) % 100);
