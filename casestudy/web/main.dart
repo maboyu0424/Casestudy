@@ -107,9 +107,20 @@ void main() {
               "Already booked!Pls choose another room or another time!";
         }
         if (bookingtable.isNotEmpty && t == true) {
+          var venue;
+          if (venueNumber > 3 && venueNumber <= 13) {
+            venue = venueNumber - 1;
+          } else if (venueNumber > 13 && venueNumber < 27) {
+            venue = venueNumber - 2;
+          } else if (venueNumber >= 27 && venueNumber <= 33) {
+            venue = venueNumber - 3;
+          } else if (venueNumber <= 3) {
+            venue = venueNumber;
+          }
+
           final newToDo = LIElement()
             ..text =
-                (' Room$venueNumber is already booked at $day/$month/$year from $sth:$stm to $edh:$edm');
+                (' Room$venue is already booked at $day/$month/$year from $sth:$stm to $edh:$edm');
           for (var i = 0; i < bookingtable.length; i++) {
             querySelector("#bookingRecord")?.children.add(newToDo);
           }
